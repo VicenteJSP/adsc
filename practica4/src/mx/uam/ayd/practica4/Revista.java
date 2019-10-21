@@ -2,6 +2,7 @@
  * Revista
  * @author Vicente Santiago
  */
+package mx.uam.ayd.practica4;
 public class Revista extends Material {
 
     private int numero;
@@ -13,5 +14,16 @@ public class Revista extends Material {
 
     public int dameNumero() {
         return this.numero;
+    }
+
+    @Override
+    public double damePrecio () {
+        return this.precio;
+    }
+
+    @Override
+    public String toString() {
+        return "Revista: "+this.nombre+", Numero:"+this.numero+", "+this.precio;
+
     }
 }
